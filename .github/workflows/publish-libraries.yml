@@ -7,15 +7,11 @@ on:
     branches: [ "main" ]
 
 jobs:
-
   build:
-
     strategy:
       matrix:
         configuration: [Release]
-
     runs-on: windows-latest  
-    
     env:
       Solution_Name: Samsung.SmartTv.Client.sln                         
 
@@ -28,11 +24,11 @@ jobs:
     - name: Install .NET Core
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 7.0.x
     
     - name: Pack client abstractions
-      run: dotnet pack src\libs\Samsung.SmartTv.Client\Samsung.SmartTv.Client.csproj -c $env:Configuration
+      run: dotnet pack src\libs\Samsung.SmartTv.Client\Samsung.SmartTv.Client.csproj -c Release
     
     - name: Pack web sockes client
-      run: dotnet pack src\libs\Samsung.SmartTv.Client.WebSockets\Samsung.SmartTv.Client.WebSockets.csproj -c $env:Configuration
+      run: dotnet pack src\libs\Samsung.SmartTv.Client.WebSockets\Samsung.SmartTv.Client.WebSockets.csproj -c Release
 
