@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <Authors>Perun85</Authors>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>samsung, smart tv, remote control, web sockets</PackageTags>	
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <InformationalVersion>1.0.0</InformationalVersion>
+  </PropertyGroup>
+</Project>

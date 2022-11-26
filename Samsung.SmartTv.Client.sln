@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D5C125ED-D57F-4AD6-B4EF-72F08E4491B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{712BF7C2-BAA2-4F2E-B42A-A6B500B952AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{26F43B16-C49C-4259-A790-9B961907EB32}"
+	ProjectSection(SolutionItems) = preProject
+		docs\LICENSE.md = docs\LICENSE.md
+		docs\README.md = docs\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samsung.SmartTv.Client.WebSockets", "src\libs\Samsung.SmartTv.Client.WebSockets\Samsung.SmartTv.Client.WebSockets.csproj", "{19624112-C393-4345-8847-78A5F113BC86}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samsung.SmartTv.Client", "src\libs\Samsung.SmartTv.Client\Samsung.SmartTv.Client.csproj", "{FFB81B4B-C4D0-4A51-823C-D40B08F54FC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{BA898F11-7BDE-4A03-A356-83673417F954}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samsung.SmartTvClient.Tools.ConsoleRemote", "src\tools\Samsung.SmartTvClient.Tools.ConsoleRemote\Samsung.SmartTvClient.Tools.ConsoleRemote.csproj", "{A152037E-EB63-4B1C-BFE1-8C342109459B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19624112-C393-4345-8847-78A5F113BC86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19624112-C393-4345-8847-78A5F113BC86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19624112-C393-4345-8847-78A5F113BC86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19624112-C393-4345-8847-78A5F113BC86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB81B4B-C4D0-4A51-823C-D40B08F54FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB81B4B-C4D0-4A51-823C-D40B08F54FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB81B4B-C4D0-4A51-823C-D40B08F54FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB81B4B-C4D0-4A51-823C-D40B08F54FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A152037E-EB63-4B1C-BFE1-8C342109459B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A152037E-EB63-4B1C-BFE1-8C342109459B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A152037E-EB63-4B1C-BFE1-8C342109459B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A152037E-EB63-4B1C-BFE1-8C342109459B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{712BF7C2-BAA2-4F2E-B42A-A6B500B952AC} = {D5C125ED-D57F-4AD6-B4EF-72F08E4491B8}
+		{19624112-C393-4345-8847-78A5F113BC86} = {712BF7C2-BAA2-4F2E-B42A-A6B500B952AC}
+		{FFB81B4B-C4D0-4A51-823C-D40B08F54FC3} = {712BF7C2-BAA2-4F2E-B42A-A6B500B952AC}
+		{BA898F11-7BDE-4A03-A356-83673417F954} = {D5C125ED-D57F-4AD6-B4EF-72F08E4491B8}
+		{A152037E-EB63-4B1C-BFE1-8C342109459B} = {BA898F11-7BDE-4A03-A356-83673417F954}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D59B114-59F2-4C0F-8BE9-CCE3A2929DDA}
+	EndGlobalSection
+EndGlobal

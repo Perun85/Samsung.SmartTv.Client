@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <PackageLicenseFile>D:\Dev\Repos\DotNet\Samsung.SmartTv\docs\LICENSE.md</PackageLicenseFile>
+    <Description>Samsung smart TV web sockets based client</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Samsung.SmartTv.Client\Samsung.SmartTv.Client.csproj" />
+  </ItemGroup>
+
+</Project>
