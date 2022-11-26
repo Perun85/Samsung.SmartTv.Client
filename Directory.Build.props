@@ -2,6 +2,7 @@
   <PropertyGroup>
     <Authors>Perun85</Authors>
     <RepositoryType>git</RepositoryType>
+    <PackageLicenseFile>docs\LICENSE.md</PackageLicenseFile>
     <RepositoryUrl>https://github.com/Perun85/Samsung.SmartTv.Client</RepositoryUrl>
     <PackageTags>samsung, smart tv, remote control, web sockets</PackageTags>	
     <Version>1.0.0</Version>

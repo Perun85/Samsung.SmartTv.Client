@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>False</GenerateDocumentationFile>
     <Description>Samsung smart TV client abstractions</Description>
-    <PackageLicenseFile>D:\Dev\Repos\DotNet\Samsung.SmartTv\docs\LICENSE.md</PackageLicenseFile>
+    <PackageLicenseFile></PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
