@@ -31,4 +31,6 @@ jobs:
     
     - name: Pack web sockes client
       run: dotnet pack src\libs\Samsung.SmartTv.Client.WebSockets\Samsung.SmartTv.Client.WebSockets.csproj -c Release
-
+    
+    - name: Publish to NuGet.org
+      run: nuget push **\*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}}
