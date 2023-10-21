@@ -27,6 +27,9 @@ var token =  await AppRegistryClientFactory.Create(tvIpEndPoint, useConsoleLogge
 
 using var remoteControlClient =RemoteControlClientFactory.Create(tvIpEndPoint, AppName, token!, useConsoleLogger: true);
 
+// Open the websocket connection
+await remoteControlClient.ConnectAsync().ConfigureAwait(false);
+
 // Predefined keys
 await remoteControlClient.SendKeyAsync(Key.Mute).ConfigureAwait(false);
 await Task.Delay(5000);
@@ -39,6 +42,9 @@ await remoteControlClient.SendKeyAsync(Key.ChannelDown).ConfigureAwait(false);
 // Custom channel number.
 var channel01 = Key.GetChannelNumericKey(1);
 await remoteControlClient.SendKeyAsync(channel01).ConfigureAwait(false);
+
+// Close the connection
+await remoteControlClient.DisconnectAsync().ConfigureAwait(false);
 ```
 
 ### Custom device certificate validation  
